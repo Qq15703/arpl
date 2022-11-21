@@ -28,7 +28,7 @@ fi
 
 # Get latest addons and install its
 echo "Getting latest Addons"
-rm -Rf /tmp/addons
+#rm -Rf /tmp/addons
 mkdir -p /tmp/addons
 if [ -d ../arpl-addons ]; then
   cp ../arpl-addons/*.addon /tmp/addons/
