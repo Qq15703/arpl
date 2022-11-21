@@ -7,10 +7,10 @@ if [ ! -d .buildroot ]; then
   git clone --single-branch -b 2022.02 https://github.com/buildroot/buildroot.git .buildroot
 fi
 # Remove old files
-rm -rf ".buildroot/output/target/opt/arpl"
-rm -rf ".buildroot/board/arpl/overlayfs"
-rm -rf ".buildroot/board/arpl/p1"
-rm -rf ".buildroot/board/arpl/p3"
+#rm -rf ".buildroot/output/target/opt/arpl"
+#rm -rf ".buildroot/board/arpl/overlayfs"
+#rm -rf ".buildroot/board/arpl/p1"
+#rm -rf ".buildroot/board/arpl/p3"
 
 # Get latest LKMs
 echo "Getting latest LKMs"
