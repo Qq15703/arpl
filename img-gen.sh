@@ -83,7 +83,7 @@ cd -
 qemu-img convert -O vmdk arpl.img arpl-dyn.vmdk
 qemu-img convert -O vmdk -o adapter_type=lsilogic arpl.img -o subformat=monolithicFlat arpl.vmdk
 [ -x test.sh ] && ./test.sh
-rm -f *.zip
+#rm -f *.zip
 zip -9 "arpl-${VERSION}.img.zip" arpl.img
 zip -9 "arpl-${VERSION}.vmdk-dyn.zip" arpl-dyn.vmdk
 zip -9 "arpl-${VERSION}.vmdk-flat.zip" arpl.vmdk arpl-flat.vmdk
