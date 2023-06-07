@@ -92,4 +92,4 @@ yq '.replace | explode(.) | to_entries | map([.key])[] | .[]' update-list.yml | 
   (cd `dirname ${F}` && sha256sum `basename ${F}`) >> sha256sum
 done
 yq '.replace | explode(.) | to_entries | map([.key])[] | .[]' update-list.yml | xargs zip -9j "update.zip" sha256sum update-list.yml
-rm -f sha256sum
+#rm -f sha256sum
